@@ -42,7 +42,7 @@ public class RelationshipService {
 
             candidate.setUsername(candidateName);
             candidate.setBio(candidateBio);
-            candidate.setPictureBlob(Base64.getEncoder().encodeToString(this.bs.download(username)));
+            candidate.setPictureBlob(Base64.getEncoder().encodeToString(this.bs.download(candidateName)));
 
             return candidate;
         }
